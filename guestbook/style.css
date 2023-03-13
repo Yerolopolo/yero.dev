@@ -192,7 +192,7 @@ a:focus{
     font-family: josefinsans-light;
     align-items: center;
     color: white;
-    max-width: 50%;
+    width: 40%;
 }
 
 
@@ -208,11 +208,22 @@ strong{
     font-family: josefinsans;
 }
 
+.reply{
+    margin-left: 30px;
+    transform: scale(0.95);
+}
+
 textarea:focus, input:focus{
     outline: none;
 }
 
-
+.comment{
+    border: 2px solid rgba(30, 33, 36, 0.4);
+    border-radius: 5px;
+    background-color: rgba(40, 43, 48, 0.4);
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
 .powered-by{
     color: white;
     font-size: 13px;
@@ -220,6 +231,7 @@ textarea:focus, input:focus{
     text-decoration: none;
     margin: auto;
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
 footer {
@@ -247,6 +259,10 @@ footer {
 @media only screen and (max-width: 650px) { 
     h2{
         font-size: 20px;
+    }
+
+    .messagewall{
+        width: 80%;
     }
 }
 
