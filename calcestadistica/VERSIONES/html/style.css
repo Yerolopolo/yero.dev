@@ -1,0 +1,209 @@
+
+
+
+/*Sin flechas en el input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*Sin flechas en el input*/
+
+@font-face {
+  font-family: josefinsans;
+  src: url(josefinsans.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: belgium;
+  src: url(Belgium\ Victory.ttf);
+  font-weight: 800;
+}
+
+
+
+body{
+  background-color: #424549;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #46494c 12%, transparent 12.5%, transparent 87%, #46494c 87.5%, #46494c), linear-gradient(150deg, #46494c 12%, transparent 12.5%, transparent 87%, #46494c 87.5%, #46494c), linear-gradient(30deg, #46494c 12%, transparent 12.5%, transparent 87%, #46494c 87.5%, #46494c), linear-gradient(150deg, #46494c 12%, transparent 12.5%, transparent 87%, #46494c 87.5%, #46494c), linear-gradient(60deg, #46494c77 25%, transparent 25.5%, transparent 75%, #46494c77 75%, #46494c77), linear-gradient(60deg, #46494c77 25%, transparent 25.5%, transparent 75%, #46494c77 75%, #46494c77);
+  background-size: 54px 95px;
+  background-position: 0 0, 0 0, 27px 47px, 27px 47px, 0 0, 27px 47px; 
+}
+
+/* NAV BAR */
+.navbar{
+  background-color: rgb(187, 187, 187);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 12%;
+  text-align: center;
+  font-family: josefinsans;
+
+  background: repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), rgba(213, 213, 213, 0.99);
+background-size: 76px 76px;
+background-position: 0 0, 38px 38px, 76px 38px;
+background-color: #1e2124;
+}
+
+.pagetitle{
+  left: 0;
+  position: fixed;
+  top: 12%;
+  height: 5%;
+  width: 100%;
+  background-color: #1e2124;
+  text-align: center;
+}
+
+.pagetitle.text{
+  color: rgb(207, 207, 207);
+  position: absolute;
+  font-size: 3vh;
+  top: 20%;
+  text-decoration: none;
+  font-family: 'josefinsans', sans-serif;
+}
+
+.titulo{
+  color: rgb(207, 207, 207);
+  font-size: 7vh;
+  text-decoration: none;
+  top: 3%;
+  position: relative;
+  font-family: 'josefinsans', sans-serif;
+}
+
+.floating{
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  backdrop-filter: blur(1.5px);
+}
+/* NAV BAR */
+
+.calcdiv{
+  position: absolute;
+  left: 2.5%;
+  right: 2.5%;
+  top: 20%;
+  height: 70%;
+  z-index: 2;
+}
+
+.infodiv{
+  position: absolute;
+  left: 2.5%;
+  right: 2.5%;
+  top: 20%;
+  height: 70%;
+  z-index: 1;
+}
+
+.textcontainer{
+  position: relative;
+  float: right;
+  top: 2.5%;
+  bottom: 2.5%;
+  height: 90%;
+  width: 30%;
+  margin: auto 14%;
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+  -webkit-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+}
+
+.inputform{
+  position: relative;
+  float: left;
+  top: 2.5%;
+  bottom: 2.5%;
+  height: 90%;
+  width: 30%;
+  min-width: 60vh;
+  margin: auto 14%;
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+  -webkit-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+}
+
+textarea:focus, input:focus{
+  outline: #282b30 solid 2px;
+}
+
+input[type=text] {
+  padding: 1% 2%;
+  font-family: josefinsans;
+  font-size: 3vh;
+  border: none;
+  border-radius: 4px;
+  background-color: #868686;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  padding: 1% 2%;
+  font-family: josefinsans;
+  font-size: 3vh;
+  border: none;
+  border-radius: 4px;
+  background-color: #868686;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 11%;
+
+}
+
+.field{
+  margin-top: 5%;
+  margin-left: 10%;
+  font-family: josefinsans;
+  font-size: 3vh;
+}
+.field.valores{
+  margin-top: 12%;
+}
+
+.calcbtn{
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 20px;
+  font-family: josefinsans;
+  font-size: 4vh;
+  background-color: #1e2124;
+  color:rgb(187, 187, 187);
+}
+
+.outputvalues{
+  position: relative;
+  float: right;
+  width: 40%;
+  border: 3px solid red;
+  margin: auto 3%;
+}
+
+.formulamitjana{
+width: 500px;
+height: auto;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0%); }
+  50%  { transform: translate(0, 10%); }
+  100%   { transform: translate(0, -0%); }     
+}

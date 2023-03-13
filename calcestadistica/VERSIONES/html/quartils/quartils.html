@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular quartils</title>
+</head>
+<body>
+    <div class="inputform"> 
+            <div class="valores">
+                <label for="valores">Valors:</label>
+                <input type="text" id="valores" name="valores" required size="10" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+            </div>
+            <div class="frecuencias">
+                <label for="frecuencias">Freqüències:</label>
+                <input type="text" id="frecuencias" name="frecuencias"  size="10" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+            </div>
+            <button type="submit" id="boton">Calcular</button>
+    </div>
+    <div class="outputvalues"> 
+        <div class="q1div">
+            <label for="q1">Quartil 1:</label>
+            <input type="text" id="q1" name="q1" readonly="true" size="10">
+        </div>
+        <div class="q2div">
+            <label for="q2">Quartil 2 (Mediana):</label>
+            <input type="text" id="q2" name="q2" readonly="true" size="10">
+        </div>
+        <div class="q3div">
+            <label for="q2">Quartil 3:</label>
+            <input type="text" id="q3" name="q3" readonly="true" size="10">
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

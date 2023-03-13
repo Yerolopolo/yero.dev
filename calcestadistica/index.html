@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Statistical calculator - YeroDev</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="floating">
+            <!--<a href="https://yero.dev" class="titulo">Yero<span class="titulodev" style="font-family: belgium;">Dev</span></a>-->
+            <a href="https://yero.dev"><img class="logo" src="../img/logo-white.png"></a>
+        </div>
+    </div>
+
+
+    <div class="pagetitle">
+        <p class="pagetitletext noselect">Statistical Calculator</p>
+    </div>
+
+    <div class="calcdiv">
+        <div class="inputform"> 
+                <div class="field valores">
+                    <label for="valores">Valores:</label>
+                    <input type="text" id="valores" name="valores" required size="10">
+                </div>
+                <div class="field frecuencias">
+                    <label for="frecuencias">Frecuencias:</label>
+                    <input type="text" id="frecuencias" name="frecuencias"  size="10">
+                </div>
+                <button class="calcbtn" type="submit" id="boton">Calcular</button>
+    
+            <div class="field mediadiv">
+                <label for="media">Media:</label>
+                <input class="resultado" type="text" id="media" name="media" readonly="true" size="10">
+            </div>
+
+            <div class="field medianadiv">
+                <label for="mediana">Mediana:</label>
+                <input class="resultado" type="text" id="mediana" name="mediana" readonly="true" size="10">
+            </div>
+
+            <div class="field variancadiv">
+                <label for="varianca">Varianza:</label>
+                <input class="resultado" type="text" id="varianca" name="varianca" readonly="true" size="10">
+            </div>
+
+            <div class="field sigmadiv">
+                <label for="sigma">Sigma:</label>
+                <input class="resultado" type="text" id="sigma" name="sigma" readonly="true" size="10">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright ® 2023 Yero | Contact: <a style="color:white;" href="mailto:yero@yero.dev">yero@yero.dev</a> </p>
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora estadística - Yero</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="floating">
+            <a href="https://yerodev.com" class="titulo">Yero<span class="titulodev" style="font-family: belgium;">Dev</span></a>
+        </div>
+    </div>
+    <div class="pagetitle">
+        <span class="pagetitle text">Calculadora estadística</span>
+    </div>
+
+    <div class="calcdiv">
+        <div class="inputform"> 
+                <div class="field valores">
+                    <label for="valores">Valors:</label>
+                    <input type="text" id="valores" name="valores" required size="10">
+                </div>
+                <div class="field frecuencias">
+                    <label for="frecuencias">Freqüències:</label>
+                    <input type="text" id="frecuencias" name="frecuencias"  size="10">
+                </div>
+                <button class="calcbtn" type="submit" id="boton">Calcular</button>
+    
+            <div class="field mediadiv">
+                <label for="media">Mitjana:</label>
+                <input type="number" id="media" name="media" readonly="true" size="10">
+            </div>
+
+            <div class="field medianadiv">
+                <label for="mediana">Mediana:</label>
+                <input type="number" id="mediana" name="mediana" readonly="true" size="10">
+            </div>
+
+            <div class="field variancadiv">
+                <label for="varianca">Variança:</label>
+                <input type="number" id="varianca" name="varianca" readonly="true" size="10">
+            </div>
+
+            <div class="field sigmadiv">
+                <label for="sigma">Sigma:</label>
+                <input type="number" id="sigma" name="sigma" readonly="true" size="10">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="infodiv">
+        <div class="textcontainer">
+            <img src="mitjana.gif" class="formulamitjana">
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+@font-face {
+    font-family: josefinsans;
+    src: url(../fonts/josefinsans.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: josefinsans-light;
+    src: url(../fonts/JosefinSans-Light.ttf);
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: belgium;
+    src: url(../fonts/Belgium\ Victory.ttf);
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #424549;
+    background: radial-gradient(circle, transparent 20%, #424549 20%, #424549 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #424549 20%, #424549 80%, transparent 80%, transparent) 65px 65px, linear-gradient(#46494c 5.2px, transparent 5.2px) 0 -2.6px, linear-gradient(90deg, #46494c 5.2px, #424549 5.2px) -2.6px 0;
+    background-size: 130px 130px, 130px 130px, 65px 65px, 65px 65px;
+}
+  
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+    
+    
+  
+/* NAV BAR */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+  
+    background: repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), rgba(213, 213, 213, 0.99);
+    background-size: 76px 76px;
+    background-position: 0 0, 38px 38px, 76px 38px;
+    background-color: #1e2124;
+}
+  
+.pagetitle{
+    z-index: 2;
+    left: 0;
+    position: fixed;
+    top: 90px;
+    height: 30px;
+    width: 100%;
+    background-color: #1e2124;
+    text-align: center;
+    box-shadow: inset 0px 10px 10px 5px rgba(0, 0, 0, 0.26);
+}
+  
+.pagetitletext{
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    margin-top: 6px;
+    text-decoration: none;
+    font-family: 'josefinsans', sans-serif;
+}
+  
+.logo{
+    top: 10px;
+    position: relative;
+    width: 210px;
+}
+  
+.floating{
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* NAV BAR */
+
+.projectstitle{
+    position: relative;
+    top: 120px;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+h1{
+    margin-top: 40px;
+    font-family: 'josefinsans', sans-serif;
+    color: rgb(207, 207, 207);
+}
+
+.container{
+    margin-top: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 120px
+}
+
+.text{
+    color: white;
+    font-size: 22px;
+    font-family: 'josefinsans-light', sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+
+a{
+    color: white;
+    font-size: 22px;
+
+}
+
+a:focus{
+    outline: none; /* no outline - for most browsers */
+    box-shadow: none; /* no box shadow - for some browsers or if you are using Bootstrap */
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-top: auto;
+
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-size: 15px;
+    font-family: sans-serif; 
+
+    outline: none; 
+    box-shadow: none;
+
+    background: repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), repeating-radial-gradient(circle, transparent, transparent 13.3px, #282b30 13.3px, #282b30 17.1px), rgba(213, 213, 213, 0.99);
+    background-size: 76px 76px;
+    background-position: 0 0, 38px 38px, 76px 38px;
+    background-color: #1e2124;
+}
+
+/* ZE SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.26); */
+    background-color: rgba(0, 0, 0, 0.671);
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1e2124;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #16181a; 
+}
+
+
+  
+
+
+
+@keyframes divhover {
+    0% {
+        -webkit-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 37px 0px rgba(0,0,0,0.75);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 37px 0px rgba(100, 100, 100, 0.75);
+        -moz-box-shadow: 0px 0px 37px 0px rgba(100, 100, 100, 0.75);
+        box-shadow: 0px 0px 37px 0px rgba(100, 100, 100, 0.75);
+    }
+}
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0%); }
+    50%  { transform: translate(0, 10%); }
+    100%   { transform: translate(0, -0%); }     
+  }
+  
+  
