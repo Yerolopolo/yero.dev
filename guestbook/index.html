@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook | yero.dev</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta content="Guestbook | yero.dev" property="og:title" />
+    <meta content="Leave me a note!" property="og:description" />
+    <meta content="https://yero.dev/guestbook" property="og:url" />
+    <meta content="#424549" data-react-helmet="true" name="theme-color" />
+</head>
 <body>
-    <div class="entry">
-        <h2>Leave a Message</h2>
-        <form action="submit.php" method="post">
-            <input type="text" id="name" name="name" placeholder="enter name or leave empty for anon"><br><br>
-            <textarea id="message" name="message" placeholder="enter your message"></textarea><br><br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-        <div>
-            <h2>Messages</h2>
-            <div id="messages">
-                <script src="app.js"></script>
-            </div>
+    <div class="navbar">
+        <div class="floating">
+            <!--<a href="https://yero.dev" class="titulo">Yero<span class="titulodev" style="font-family: belgium;">Dev</span></a>-->
+            <a href="https://yero.dev"><img class="logo" src="../img/logo-white.png"></a>
         </div>
     </div>
+    
+
+    <div class="pagetitle">
+        <p class="pagetitletext noselect">Guestbook</p>
+    </div>
+
+    <div class="entry">
+        <h2>Leave me a message!</h2>
+        <form action="submit.php" method="post">
+            <input class="namefield" type="text" id="name" name="name" placeholder="Enter name"><br><br>
+            <textarea class="textfield" id="message" name="message" placeholder="Enter your message"></textarea><br><br>
+            <input class="button" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="messagewall">
+        <h2>Messages</h2>
+        <div id="messages">
+            <script src="app.js"></script>
+        </div>
+    </div>
+
+
+    <p class="powered-by">Guestbook powered by <a href="https://github.com/ArticExploit/guestbook">ArticExploit</a></p>
+
+    <footer>
+        <p>Copyright ® 2023 Yero | Contact: <a style="color:white; font-size: 15px;" href="mailto:yero@yero.dev">yero@yero.dev</a> </p>
+    </footer>
 </body>
 </html>
