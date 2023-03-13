@@ -188,6 +188,10 @@ footer {
     color: rgb(230, 61, 0);
 }
 
+.developing{
+    color: rgb(0, 230, 0);
+}
+
 @media only screen and (max-width: 650px) { 
     .counter{
         position:relative;
