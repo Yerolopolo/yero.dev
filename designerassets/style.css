@@ -192,7 +192,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
     width: 50px;
     height: 50px;
     border: transparent;
-    background-color: transparent;
+    background-color: Black;
     vertical-align: middle;
 }
 
