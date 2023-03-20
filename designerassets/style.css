@@ -190,7 +190,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 
 .colorpicker{
     width: 50px;
-    height: 45px;
+    height: 50px;
     border: transparent;
     background-color: transparent;
     vertical-align: middle;
