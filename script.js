@@ -25,10 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if(allText == 'live'){
     twitchdiv.style.display = "inline";
   }
-
   
   
 });
+
+
 
   
   
